@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://example.com/images/app1.png",
+    "title": "ChatWave",
+    "companyName": "WaveTech Ltd",
+    "id": 1,
+    "description": "A secure and fast messaging app that lets you chat and share files seamlessly.",
+    "size": 48,
+    "reviews": 15400,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 600 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 2400 },
+      { "name": "4 star", "count": 4100 },
+      { "name": "5 star", "count": 9400 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app2.png",
+    "title": "FitTrack Pro",
+    "companyName": "HealthWorks Inc",
+    "id": 2,
+    "description": "Track your workouts, steps, and calories with AI-powered insights.",
+    "size": 62,
+    "reviews": 8900,
+    "ratingAvg": 4.3,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 4500 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app3.png",
+    "title": "TaskMate",
+    "companyName": "Productivity Hub",
+    "id": 3,
+    "description": "Organize your day with smart task lists, reminders, and notes.",
+    "size": 35,
+    "reviews": 12300,
+    "ratingAvg": 4.6,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 3400 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app4.png",
+    "title": "PhotoCraft",
+    "companyName": "VisionSoft",
+    "id": 4,
+    "description": "Edit, filter, and enhance your photos with creative AI tools.",
+    "size": 92,
+    "reviews": 27600,
+    "ratingAvg": 4.8,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 18300 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app5.png",
+    "title": "TravelGo",
+    "companyName": "Journey Labs",
+    "id": 5,
+    "description": "Plan your trips, find cheap flights, and explore destinations worldwide.",
+    "size": 70,
+    "reviews": 9900,
+    "ratingAvg": 4.2,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 3100 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app6.png",
+    "title": "Foodify",
+    "companyName": "Tasty Corp",
+    "id": 6,
+    "description": "Discover recipes, order food, and track your nutrition easily.",
+    "size": 58,
+    "reviews": 14700,
+    "ratingAvg": 4.4,
+    "downloads": 1700000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 800 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 7600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app7.png",
+    "title": "SoundSpace",
+    "companyName": "AudioNova",
+    "id": 7,
+    "description": "Stream millions of songs and podcasts ad-free with SoundSpace Premium.",
+    "size": 85,
+    "reviews": 64000,
+    "ratingAvg": 4.7,
+    "downloads": 9500000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 13000 },
+      { "name": "5 star", "count": 43900 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app8.png",
+    "title": "EduVerse",
+    "companyName": "BrightMind",
+    "id": 8,
+    "description": "Learn new skills online with interactive courses and certifications.",
+    "size": 64,
+    "reviews": 20500,
+    "ratingAvg": 4.6,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1100 },
+      { "name": "3 star", "count": 2300 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 11100 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app9.png",
+    "title": "NoteEase",
+    "companyName": "Simplify Tools",
+    "id": 9,
+    "description": "A lightweight note-taking app that syncs instantly across your devices.",
+    "size": 27,
+    "reviews": 7400,
+    "ratingAvg": 4.1,
+    "downloads": 560000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 900 },
+      { "name": "3 star", "count": 1700 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 2100 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app10.png",
+    "title": "FinancePro",
+    "companyName": "SmartMoney Inc",
+    "id": 10,
+    "description": "Manage budgets, track spending, and analyze your finances easily.",
+    "size": 56,
+    "reviews": 18200,
+    "ratingAvg": 4.3,
+    "downloads": 1450000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 1900 },
+      { "name": "4 star", "count": 5200 },
+      { "name": "5 star", "count": 9300 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app11.png",
+    "title": "Weatherly",
+    "companyName": "CloudWorks",
+    "id": 11,
+    "description": "Get accurate forecasts, live radar maps, and severe weather alerts.",
+    "size": 49,
+    "reviews": 13400,
+    "ratingAvg": 4.0,
+    "downloads": 870000,
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 2600 },
+      { "name": "4 star", "count": 3700 },
+      { "name": "5 star", "count": 4900 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app12.png",
+    "title": "ZenSleep",
+    "companyName": "CalmWave Labs",
+    "id": 12,
+    "description": "Relax with ambient sounds, sleep tracking, and guided meditations.",
+    "size": 44,
+    "reviews": 9500,
+    "ratingAvg": 4.5,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1300 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 5300 }
+    ]
+  }
+]
