@@ -3,6 +3,7 @@ import {
   loadInstalledApps,
   removeFromInstallation,
 } from "../utils/localStorage";
+import { Link } from "react-router";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState(() => loadInstalledApps());
@@ -52,43 +53,67 @@ const Installation = () => {
       </div>
 
       <div className="space-y-3 mt-5">
-        {sortedApp().map((app) => (
-          <div
-            key={app.id}
-            className="bg-base-100 shadow-sm p-4 flex justify-between items-center rounded-lg"
-          >
-            <div className="flex gap-3 items-center">
-              <figure className="w-20">
-                <img src={app.image} alt="Movie" />
-              </figure>
-              <div className="space-y-2">
-                <h2 className="font-medium">
-                  {app.title}:{app.tagline}
-                </h2>
-                <div className="flex gap-4">
-                  <div className="flex justify-between items-center gap-1">
-                    <img className="w-4 h-4" src="/icon-downloads.png" alt="" />
-                    <span className="!text-emerald-500">{app.downloads}</span>
-                  </div>
+        {sortedApp().length ? (
+          sortedApp().map((app) => (
+            <div
+              key={app.id}
+              className="bg-base-100 shadow-sm p-4 flex justify-between items-center rounded-lg"
+            >
+              <div className="flex gap-3 items-center">
+                <figure className="w-20">
+                  <img src={app.image} alt="Movie" />
+                </figure>
+                <div className="space-y-2">
+                  <h2 className="font-medium">
+                    {app.title}:{app.tagline}
+                  </h2>
+                  <div className="flex gap-4">
+                    <div className="flex justify-between items-center gap-1">
+                      <img
+                        className="w-4 h-4"
+                        src="/icon-downloads.png"
+                        alt=""
+                      />
+                      <span className="!text-emerald-500">{app.downloads}</span>
+                    </div>
 
-                  <div className="flex justify-between items-center gap-1">
-                    <img className="w-4 h-4" src="/icon-ratings.png" alt="" />
-                    <span className="!text-orange-500">{app.ratingAvg}</span>
-                  </div>
+                    <div className="flex justify-between items-center gap-1">
+                      <img className="w-4 h-4" src="/icon-ratings.png" alt="" />
+                      <span className="!text-orange-500">{app.ratingAvg}</span>
+                    </div>
 
-                  <span className="text-secondary">{app.size} MB</span>
+                    <span className="text-secondary">{app.size} MB</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <button
-              onClick={() => handleRemove(app.id)}
-              className="btn bg-emerald-400 !text-white mt-3"
+              <button
+                onClick={() => handleRemove(app.id)}
+                className="btn bg-emerald-400 !text-white mt-3"
+              >
+                Uninstall
+              </button>
+            </div>
+          ))
+        ) : (
+          <div className="flex flex-col items-center justify-center col-span-full text-center">
+            <img className="w-80" src="/appError.png" alt="" />
+
+            <h1 className="text-4xl font-semibold mt-3">
+              OPPS!! APP NOT FOUND
+            </h1>
+            <p className="text-secondary mt-2">
+              The App you are requesting is not found on our system. please try
+              another apps
+            </p>
+            <Link
+              to={-1}
+              className="btn bg-color text-lg !text-white px-10 py-6 mt-5"
             >
-              Uninstall
-            </button>
+              Go Back!
+            </Link>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );

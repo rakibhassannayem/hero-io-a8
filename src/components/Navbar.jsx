@@ -66,9 +66,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link to={"/"} className="flex items-center cursor-pointer">
+          <Link to={"/"} className="btn bg-white border-0 flex items-center cursor-pointer">
             <img className="w-10" src="/logo.png" alt="" />
-            <h1 className="text-color font-bold">HERO.IO</h1>
+            <h1 className="text-color font-bold text-xl">HERO.IO</h1>
           </Link>
         </div>
 

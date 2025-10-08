@@ -23,7 +23,7 @@ const TrandingApps = () => {
         )}
       </div>
       <div className="flex justify-center mt-8 mb-10">
-        <Link to={"/apps"} className="btn bg-color !text-white">
+        <Link to={"/apps"} className="btn bg-color text-lg !text-white px-10 py-6 mt-5">
           Show All
         </Link>
       </div>
