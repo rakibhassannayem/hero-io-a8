@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { loadInstalledApps } from "../utils/localStorage";
+import {
+  loadInstalledApps,
+  removeFromInstallation,
+} from "../utils/localStorage";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState(() => loadInstalledApps());
@@ -17,6 +20,11 @@ const Installation = () => {
     } else {
       return installedApps;
     }
+  };
+
+  const handleRemove = (id) => {
+    removeFromInstallation(id);
+    setInstalledApps((prev) => prev.filter((a) => a.id !== id));
   };
 
   return (
@@ -45,7 +53,10 @@ const Installation = () => {
 
       <div className="space-y-3 mt-5">
         {sortedApp().map((app) => (
-          <div className="bg-base-100 shadow-sm p-4 flex justify-between items-center rounded-lg">
+          <div
+            key={app.id}
+            className="bg-base-100 shadow-sm p-4 flex justify-between items-center rounded-lg"
+          >
             <div className="flex gap-3 items-center">
               <figure className="w-20">
                 <img src={app.image} alt="Movie" />
@@ -70,7 +81,10 @@ const Installation = () => {
               </div>
             </div>
 
-            <button className="btn bg-emerald-400 !text-white mt-3">
+            <button
+              onClick={() => handleRemove(app.id)}
+              className="btn bg-emerald-400 !text-white mt-3"
+            >
               Uninstall
             </button>
           </div>
