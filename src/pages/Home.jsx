@@ -1,8 +1,8 @@
-import useApps from "../hooks/useApps";
+// import useApps from "../hooks/useApps";
 import HeroSection from "../components/HeroSection";
 
 const Home = () => {
-  const { apps, loading, error } = useApps();
+  // const { apps, loading, error } = useApps();
 
   return (
     <div>
