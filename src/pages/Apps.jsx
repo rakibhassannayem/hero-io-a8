@@ -1,9 +1,9 @@
-import React from "react";
 import useApps from "../hooks/useApps";
 import AppCard from "../components/AppCard";
+import SkeletonLoading from "../components/SkeletonLoading";
 
 const Apps = () => {
-  const { apps, loading, error } = useApps();
+  const { apps, loading } = useApps();
   return (
     <div>
       <div className="text-center">
@@ -13,15 +13,19 @@ const Apps = () => {
         </p>
       </div>
 
-      <div className="flex justify-between mt-5">
+      <div className="flex justify-between items-center mt-5">
         <h2 className="font-bold text-xl">({apps.length}) Apps Found</h2>
-        <input className="border" type="text" placeholder="search" />
+        <label className="input">
+          <input type="search" placeholder="Search Products" />
+        </label>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
-        {apps.map((app) => (
-          <AppCard key={app.id} app={app} />
-        ))}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
+        {loading ? (
+          <SkeletonLoading />
+        ) : (
+          apps.map((app) => <AppCard key={app.id} app={app} />)
+        )}
       </div>
     </div>
   );

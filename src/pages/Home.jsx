@@ -1,5 +1,6 @@
 // import useApps from "../hooks/useApps";
 import HeroSection from "../components/HeroSection";
+import TrandingApps from "../components/TrandingApps";
 
 const Home = () => {
   // const { apps, loading, error } = useApps();
@@ -7,6 +8,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection />
+      <TrandingApps />
     </div>
   );
 };

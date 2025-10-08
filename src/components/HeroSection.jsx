@@ -1,5 +1,3 @@
-import React from "react";
-
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center text-center">
@@ -14,21 +12,29 @@ const HeroSection = () => {
           into digital experiences that truly make an impact.
         </p>
         <div className="space-x-4">
-          <button className="btn">
+          <a
+            href="https://play.google.com/store"
+            target="_blank"
+            className="btn"
+          >
             <img src="/playstore.png" alt="" />
             Google Play
-          </button>
-          <button className="btn">
+          </a>
+          <a
+            href="https://www.apple.com/app-store/"
+            target="_blank"
+            className="btn"
+          >
             <img src="/appstore.png" alt="" />
             App Store
-          </button>
+          </a>
         </div>
       </div>
       <div className="max-w-2xl">
         <img className="" src="/hero.png" alt="" />
       </div>
 
-      <div className="bg-color w-full py-10">
+      <div className="bg-color w-screen py-10">
         <h1 className="text-3xl !text-white font-semibold">
           Trusted by Millions, Built for You
         </h1>
