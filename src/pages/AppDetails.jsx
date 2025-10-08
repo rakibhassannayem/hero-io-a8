@@ -10,10 +10,12 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import { useState } from "react";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
+  const [isDisabled, setIsDisabled] = useState(false);
   const app = apps.find((a) => a.id === Number(id));
 
   if (loading) return <SkeletonLoading />;
@@ -32,6 +34,7 @@ const AppDetails = () => {
   } = app;
 
   const handleInstall = (app) => {
+    setIsDisabled(true);
     addToInstallation(app);
   };
 
@@ -78,9 +81,10 @@ const AppDetails = () => {
 
           <button
             onClick={() => handleInstall(app)}
+            disabled={isDisabled}
             className="btn bg-emerald-400 !text-white mt-3"
           >
-            Install Now ({size} MB)
+            {isDisabled ? "Installed" : `Install Now (${size}) MB`}
           </button>
         </div>
       </div>
