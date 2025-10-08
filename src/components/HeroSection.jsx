@@ -8,7 +8,7 @@ const HeroSection = () => {
           We Build <br />
           <span className="text-color">Productive</span> Apps
         </h1>
-        <p className="!text-slate-600 text-xs max-w-3xl">
+        <p className="!text-slate-600 text-sm max-w-3xl">
           At HERO.IO, we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting.Our goal is to turn your ideas
           into digital experiences that truly make an impact.
