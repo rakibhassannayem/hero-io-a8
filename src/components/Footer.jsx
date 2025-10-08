@@ -5,25 +5,25 @@ const Footer = () => {
     <footer className="footer footer-horizontal footer-center bg-slate-900 text-primary-content p-10">
       <aside>
         <img className="w-15" src="/logo.png" alt="" />
-        <p className="font-bold text-color">
+        <p className="!text-slate-200 font-medium">
           HERO.IO Ltd.
           <br />
           Providing reliable Apps since 2019
         </p>
-        <nav className="">
+        <nav>
           <div className="grid grid-flow-col gap-4">
-            <a>
-              <Twitter className="stroke-violet-700" />
+            <a className="cursor-pointer hover:scale-150 transition">
+              <Twitter className="stroke-violet-100" />
             </a>
-            <a>
-              <Facebook className="stroke-violet-700" />
+            <a className="cursor-pointer hover:scale-150 transition">
+              <Facebook className="stroke-violet-100" />
             </a>
-            <a>
-              <Youtube className="stroke-violet-700" />
+            <a className="cursor-pointer hover:scale-150 transition">
+              <Youtube className="stroke-violet-100" />
             </a>
           </div>
         </nav>
-        <p className="!text-violet-800 mt-3">
+        <p className="!text-violet-500 mt-3">
           Copyright © {new Date().getFullYear()} - All right reserved
         </p>
       </aside>

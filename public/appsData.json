@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://static.thenounproject.com/png/app-square-icon-2514758-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/chat-bubble-icon.png",
     "title": "ChatWave",
     "companyName": "WaveTech Ltd",
     "id": 1,
@@ -8,7 +8,7 @@
     "size": 48,
     "reviews": 15400,
     "ratingAvg": 4.5,
-    "downloads": 1200000,
+    "downloads": "1.2M",
     "ratings": [
       { "name": "1 star", "count": 600 },
       { "name": "2 star", "count": 900 },
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/app-square-icon-2514757-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/preferences-desktop-accessibility-icon.png",
     "title": "FitTrack Pro",
     "companyName": "HealthWorks Inc",
     "id": 2,
@@ -26,7 +26,7 @@
     "size": 62,
     "reviews": 8900,
     "ratingAvg": 4.3,
-    "downloads": 950000,
+    "downloads": "1.0M",
     "ratings": [
       { "name": "1 star", "count": 400 },
       { "name": "2 star", "count": 700 },
@@ -36,15 +36,14 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/app-square-icon-2514763-512.png",
-    "title": "TaskMate",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/logview-icon.png",
     "companyName": "Productivity Hub",
     "id": 3,
     "description": "Organize your day with smart task lists, reminders, and notes.",
     "size": 35,
     "reviews": 12300,
     "ratingAvg": 4.6,
-    "downloads": 800000,
+    "downloads": "0.8M",
     "ratings": [
       { "name": "1 star", "count": 300 },
       { "name": "2 star", "count": 500 },
@@ -54,7 +53,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/square-app-menu-icon-4888363-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/multimedia-photo-manager-icon.png",
     "title": "PhotoCraft",
     "companyName": "VisionSoft",
     "id": 4,
@@ -62,7 +61,7 @@
     "size": 92,
     "reviews": 27600,
     "ratingAvg": 4.8,
-    "downloads": 2400000,
+    "downloads": "2.4M",
     "ratings": [
       { "name": "1 star", "count": 500 },
       { "name": "2 star", "count": 800 },
@@ -72,7 +71,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/grid-icon-5106439-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/inkscape-icon.png",
     "title": "TravelGo",
     "companyName": "Journey Labs",
     "id": 5,
@@ -80,7 +79,7 @@
     "size": 70,
     "reviews": 9900,
     "ratingAvg": 4.2,
-    "downloads": 1300000,
+    "downloads": "1.3M",
     "ratings": [
       { "name": "1 star", "count": 700 },
       { "name": "2 star", "count": 1000 },
@@ -90,7 +89,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/menu-icon-4855553-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/cheese-icon.png",
     "title": "Foodify",
     "companyName": "Tasty Corp",
     "id": 6,
@@ -98,7 +97,7 @@
     "size": 58,
     "reviews": 14700,
     "ratingAvg": 4.4,
-    "downloads": 1700000,
+    "downloads": "1.7M",
     "ratings": [
       { "name": "1 star", "count": 500 },
       { "name": "2 star", "count": 800 },
@@ -108,7 +107,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/application-icon-891166-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/vocal-icon.png",
     "title": "SoundSpace",
     "companyName": "AudioNova",
     "id": 7,
@@ -116,7 +115,7 @@
     "size": 85,
     "reviews": 64000,
     "ratingAvg": 4.7,
-    "downloads": 9500000,
+    "downloads": "9.5M",
     "ratings": [
       { "name": "1 star", "count": 1200 },
       { "name": "2 star", "count": 1700 },
@@ -126,7 +125,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/recent-app-icon-2617586-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/libreoffice-writer-icon.png",
     "title": "EduVerse",
     "companyName": "BrightMind",
     "id": 8,
@@ -134,7 +133,7 @@
     "size": 64,
     "reviews": 20500,
     "ratingAvg": 4.6,
-    "downloads": 2100000,
+    "downloads": "2.1M",
     "ratings": [
       { "name": "1 star", "count": 800 },
       { "name": "2 star", "count": 1100 },
@@ -144,7 +143,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/square-icon-18053-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/accessories-text-editor-icon.png",
     "title": "NoteEase",
     "companyName": "Simplify Tools",
     "id": 9,
@@ -152,7 +151,7 @@
     "size": 27,
     "reviews": 7400,
     "ratingAvg": 4.1,
-    "downloads": 560000,
+    "downloads": "0.6M",
     "ratings": [
       { "name": "1 star", "count": 500 },
       { "name": "2 star", "count": 900 },
@@ -162,7 +161,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/square-menu-icon-880268-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/terminal-green-icon.png",
     "title": "FinancePro",
     "companyName": "SmartMoney Inc",
     "id": 10,
@@ -170,7 +169,7 @@
     "size": 56,
     "reviews": 18200,
     "ratingAvg": 4.3,
-    "downloads": 1450000,
+    "downloads": "1.5M",
     "ratings": [
       { "name": "1 star", "count": 800 },
       { "name": "2 star", "count": 1000 },
@@ -180,7 +179,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/square-menu-icon-880251-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/browser-web-icon.png",
     "title": "Weatherly",
     "companyName": "CloudWorks",
     "id": 11,
@@ -188,7 +187,7 @@
     "size": 49,
     "reviews": 13400,
     "ratingAvg": 4.0,
-    "downloads": 870000,
+    "downloads": "0.9M",
     "ratings": [
       { "name": "1 star", "count": 1000 },
       { "name": "2 star", "count": 1200 },
@@ -198,7 +197,7 @@
     ]
   },
   {
-    "image": "https://static.thenounproject.com/png/square-menu-icon-880253-512.png",
+    "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/preferences-system-power-icon.png",
     "title": "ZenSleep",
     "companyName": "CalmWave Labs",
     "id": 12,
@@ -206,7 +205,7 @@
     "size": 44,
     "reviews": 9500,
     "ratingAvg": 4.5,
-    "downloads": 780000,
+    "downloads": "0.8M",
     "ratings": [
       { "name": "1 star", "count": 400 },
       { "name": "2 star", "count": 700 },
