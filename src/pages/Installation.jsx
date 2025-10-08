@@ -3,6 +3,22 @@ import { loadInstalledApps } from "../utils/localStorage";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState(() => loadInstalledApps());
+  const [sortOrder, setSortOrder] = useState("none");
+
+  const sortedApp = () => {
+    if (sortOrder === "asc") {
+      return [...installedApps].sort(
+        (a, b) => parseFloat(a.downloads) - parseFloat(b.downloads)
+      );
+    } else if (sortOrder === "desc") {
+      return [...installedApps].sort(
+        (a, b) => parseFloat(b.downloads) - parseFloat(a.downloads)
+      );
+    } else {
+      return installedApps;
+    }
+  };
+
   return (
     <div>
       <div className="text-center">
@@ -14,17 +30,21 @@ const Installation = () => {
 
       <div className="flex justify-between items-center mt-5">
         <h2 className="font-bold text-xl">{installedApps.length} Apps Found</h2>
-        <label className="input">
-          <input
-            // onChange={(e) => setSearch(e.target.value)}
-            type="search"
-            placeholder="Search Products"
-          />
+        <label className="form-control w-full max-w-xs">
+          <select
+            className="select"
+            value={sortOrder}
+            onChange={(e) => setSortOrder(e.target.value)}
+          >
+            <option value="none">Sort By Downloads</option>
+            <option value="asc">Low to High</option>
+            <option value="desc">High to Low</option>
+          </select>
         </label>
       </div>
 
       <div className="space-y-3 mt-5">
-        {installedApps.map((app) => (
+        {sortedApp().map((app) => (
           <div className="bg-base-100 shadow-sm p-4 flex justify-between items-center rounded-lg">
             <div className="flex gap-3 items-center">
               <figure className="w-20">
