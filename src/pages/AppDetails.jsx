@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
 import SkeletonLoading from "../components/SkeletonLoading";
+import { addToInstallation } from "../utils/localStorage";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -21,7 +22,9 @@ const AppDetails = () => {
     description,
   } = app;
 
-  const handleInstall =(id)=>{}
+  const handleInstall =(app)=>{
+    addToInstallation(app)
+  }
 
   return (
     <div>
@@ -64,7 +67,7 @@ const AppDetails = () => {
             </div>
           </div>
 
-          <button onClick={()=>handleInstall(id)} className="btn bg-emerald-400 !text-white mt-3">
+          <button onClick={()=>handleInstall(app)} className="btn bg-emerald-400 !text-white mt-3">
             Install Now ({size} MB)
           </button>
         </div>

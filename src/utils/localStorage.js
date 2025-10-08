@@ -1,4 +1,4 @@
-export const loadInstalledApp = () => {
+export const loadInstalledApps = () => {
   try {
     const data = localStorage.getItem("installedApps");
     return data ? JSON.parse(data) : [];
@@ -9,7 +9,7 @@ export const loadInstalledApp = () => {
 };
 
 export const addToInstallation = (app) => {
-  const existingInstalledApps = loadInstalledApp();
+  const existingInstalledApps = loadInstalledApps();
   try {
     const isDuplicate = existingInstalledApps.some((a) => a.id === app.id);
 
@@ -25,7 +25,7 @@ export const addToInstallation = (app) => {
 };
 
 export const removeFromInstallation = (id) => {
-  const existingInstalledApps = loadInstalledApp();
+  const existingInstalledApps = loadInstalledApps();
   try {
     const updateInstalledList = existingInstalledApps.filter(
       (app) => app.id !== id
