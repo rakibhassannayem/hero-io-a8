@@ -1,10 +1,14 @@
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
+import SkeletonLoading from "../components/SkeletonLoading";
 
 const AppDetails = () => {
   const { id } = useParams();
-  const { apps } = useApps();
-  const app = apps.find((a) => a.id === Number(id)) || "";
+  const { apps, loading } = useApps();
+  const app = apps.find((a) => a.id === Number(id));
+
+  if (loading) return <SkeletonLoading />;
+
   const {
     image,
     title,
@@ -16,6 +20,9 @@ const AppDetails = () => {
     size,
     description,
   } = app;
+
+  const handleInstall =(id)=>{}
+
   return (
     <div>
       <div className="flex flex-col md:flex-row items-center gap-10">
@@ -24,7 +31,9 @@ const AppDetails = () => {
         </div>
         <div>
           <div>
-            <h1 className="font-bold text-2xl">{title}: {tagline}</h1>
+            <h1 className="font-bold text-2xl">
+              {title}: {tagline}
+            </h1>
             <p className="text-secondary font-light">
               Developed by{" "}
               <span className="text-color font-semibold">{companyName}</span>
@@ -55,7 +64,7 @@ const AppDetails = () => {
             </div>
           </div>
 
-          <button className="btn bg-emerald-400 !text-white mt-3">
+          <button onClick={()=>handleInstall(id)} className="btn bg-emerald-400 !text-white mt-3">
             Install Now ({size} MB)
           </button>
         </div>
