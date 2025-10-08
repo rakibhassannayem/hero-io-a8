@@ -4,6 +4,7 @@ import {
   removeFromInstallation,
 } from "../utils/localStorage";
 import { Link } from "react-router";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState(() => loadInstalledApps());
@@ -26,6 +27,7 @@ const Installation = () => {
   const handleRemove = (id) => {
     removeFromInstallation(id);
     setInstalledApps((prev) => prev.filter((a) => a.id !== id));
+    toast.warn('Uninstalled successfully!')
   };
 
   return (
