@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
           </div>
         </nav>
-        <p className="!text-gray-500 mt-3">
+        <p className="!text-violet-800 mt-3">
           Copyright © {new Date().getFullYear()} - All right reserved
         </p>
       </aside>
