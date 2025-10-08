@@ -13,6 +13,9 @@
   background-clip: text;
   color: transparent;
 }
+.text-secondary{
+  color: #627382;
+}
 .bg-color {
   background: linear-gradient(to bottom right, #632ee3, #9f62f2);
 }

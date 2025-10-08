@@ -2,11 +2,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/chat-bubble-icon.png",
     "title": "ChatWave",
+    "tagline": "Connect. Chat. Share. Instantly.",
     "companyName": "WaveTech Ltd",
     "id": 1,
-    "description": "A secure and fast messaging app that lets you chat and share files seamlessly.",
+    "description": "ChatWave brings people closer with seamless real-time messaging, file sharing, and secure cloud sync. Whether for friends or work, it keeps your conversations private and lightning fast across all your devices.",
     "size": 48,
-    "reviews": 15400,
+    "reviews": "154K",
     "ratingAvg": 4.5,
     "downloads": "1.2M",
     "ratings": [
@@ -20,11 +21,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/preferences-desktop-accessibility-icon.png",
     "title": "FitTrack Pro",
+    "tagline": "Your Fitness, Smarter Tracked.",
     "companyName": "HealthWorks Inc",
     "id": 2,
-    "description": "Track your workouts, steps, and calories with AI‑powered insights.",
+    "description": "FitTrack Pro helps you stay motivated and informed by tracking workouts, calories, and daily steps. With AI-powered insights, it gives personalized suggestions to improve your health and fitness over time.",
     "size": 62,
-    "reviews": 8900,
+    "reviews": "89K",
     "ratingAvg": 4.3,
     "downloads": "1.0M",
     "ratings": [
@@ -38,11 +40,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/logview-icon.png",
     "title": "TaskMate",
+    "tagline": "Plan. Focus. Achieve Goals.",
     "companyName": "Productivity Hub",
     "id": 3,
-    "description": "Organize your day with smart task lists, reminders, and notes.",
+    "description": "TaskMate is your personal productivity assistant designed to keep your life organized. Create to-do lists, set reminders, and sync notes effortlessly across platforms to stay on top of every task and project.",
     "size": 35,
-    "reviews": 12300,
+    "reviews": "123K",
     "ratingAvg": 4.6,
     "downloads": "0.8M",
     "ratings": [
@@ -56,11 +59,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/multimedia-photo-manager-icon.png",
     "title": "PhotoCraft",
+    "tagline": "Create. Edit. Inspire Everyday.",
     "companyName": "VisionSoft",
     "id": 4,
-    "description": "Edit, filter, and enhance your photos with creative AI tools.",
+    "description": "PhotoCraft turns your ordinary photos into stunning masterpieces with AI-powered filters, background removal, and color correction. Enhance lighting, fix imperfections, and express your creativity effortlessly.",
     "size": 92,
-    "reviews": 27600,
+    "reviews": "276K",
     "ratingAvg": 4.8,
     "downloads": "2.4M",
     "ratings": [
@@ -74,11 +78,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/inkscape-icon.png",
     "title": "TravelGo",
+    "tagline": "Your World, One App.",
     "companyName": "Journey Labs",
     "id": 5,
-    "description": "Plan your trips, find cheap flights, and explore destinations worldwide.",
+    "description": "TravelGo simplifies trip planning with smart itinerary tools, affordable flight deals, and local activity suggestions. From weekend getaways to global adventures, explore the world with confidence and ease.",
     "size": 70,
-    "reviews": 9900,
+    "reviews": "99K",
     "ratingAvg": 4.2,
     "downloads": "1.3M",
     "ratings": [
@@ -92,11 +97,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/cheese-icon.png",
     "title": "Foodify",
+    "tagline": "Eat Smart, Live Better.",
     "companyName": "Tasty Corp",
     "id": 6,
-    "description": "Discover recipes, order food, and track your nutrition easily.",
+    "description": "Foodify brings recipes, nutrition tracking, and food delivery together in one place. Discover new cuisines, get personalized meal plans, and order from nearby restaurants all within a single smart platform.",
     "size": 58,
-    "reviews": 14700,
+    "reviews": "147K",
     "ratingAvg": 4.4,
     "downloads": "1.7M",
     "ratings": [
@@ -110,11 +116,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/vocal-icon.png",
     "title": "SoundSpace",
+    "tagline": "Feel the Music Flow.",
     "companyName": "AudioNova",
     "id": 7,
-    "description": "Stream millions of songs and podcasts ad‑free with SoundSpace Premium.",
+    "description": "SoundSpace delivers millions of songs, albums, and podcasts ad-free with premium quality streaming. Curate playlists, discover trending artists, and enjoy immersive sound designed for true music lovers.",
     "size": 85,
-    "reviews": 64000,
+    "reviews": "640K",
     "ratingAvg": 4.7,
     "downloads": "9.5M",
     "ratings": [
@@ -128,11 +135,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/libreoffice-writer-icon.png",
     "title": "EduVerse",
+    "tagline": "Learn. Grow. Succeed.",
     "companyName": "BrightMind",
     "id": 8,
-    "description": "Learn new skills online with interactive courses and certifications.",
+    "description": "EduVerse transforms the way you learn online with expert-led video courses, interactive challenges, and career certifications. Track your progress and gain real-world skills that make a lasting impact.",
     "size": 64,
-    "reviews": 20500,
+    "reviews": "205K",
     "ratingAvg": 4.6,
     "downloads": "2.1M",
     "ratings": [
@@ -146,11 +154,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/accessories-text-editor-icon.png",
     "title": "NoteEase",
+    "tagline": "Notes Made Simple.",
     "companyName": "Simplify Tools",
     "id": 9,
-    "description": "A lightweight note‑taking app that syncs instantly across your devices.",
+    "description": "NoteEase offers lightning-fast note-taking with instant sync across all your devices. Capture ideas, jot quick reminders, and organize them in folders or tags for a clutter-free productivity experience.",
     "size": 27,
-    "reviews": 7400,
+    "reviews": "74K",
     "ratingAvg": 4.1,
     "downloads": "0.6M",
     "ratings": [
@@ -164,11 +173,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/terminal-green-icon.png",
     "title": "FinancePro",
+    "tagline": "Control Your Finances Easily.",
     "companyName": "SmartMoney Inc",
     "id": 10,
-    "description": "Manage budgets, track spending, and analyze your finances easily.",
+    "description": "FinancePro helps you understand where your money goes. Track income, set budgets, monitor expenses, and receive smart reports that help you save more and achieve your financial goals faster.",
     "size": 56,
-    "reviews": 18200,
+    "reviews": "182K",
     "ratingAvg": 4.3,
     "downloads": "1.5M",
     "ratings": [
@@ -182,11 +192,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/browser-web-icon.png",
     "title": "Weatherly",
+    "tagline": "Forecasts You Can Trust.",
     "companyName": "CloudWorks",
     "id": 11,
-    "description": "Get accurate forecasts, live radar maps, and severe weather alerts.",
+    "description": "Weatherly provides live forecasts, radar maps, and severe weather alerts to help you plan your day better. Stay informed with hourly predictions, air quality updates, and smart climate insights.",
     "size": 49,
-    "reviews": 13400,
+    "reviews": "134K",
     "ratingAvg": 4.0,
     "downloads": "0.9M",
     "ratings": [
@@ -200,11 +211,12 @@
   {
     "image": "https://icons.iconarchive.com/icons/bokehlicia/captiva/256/preferences-system-power-icon.png",
     "title": "ZenSleep",
+    "tagline": "Sleep Better, Live Better.",
     "companyName": "CalmWave Labs",
     "id": 12,
-    "description": "Relax with ambient sounds, sleep tracking, and guided meditations.",
+    "description": "ZenSleep helps you unwind with calming soundscapes, sleep tracking, and mindfulness guides. Drift into deep rest with personalized relaxation programs designed to improve your sleep quality and mood.",
     "size": 44,
-    "reviews": 9500,
+    "reviews": "95K",
     "ratingAvg": 4.5,
     "downloads": "0.8M",
     "ratings": [

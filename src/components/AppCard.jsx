@@ -2,14 +2,14 @@ import { Download, Star } from "lucide-react";
 import { Link } from "react-router";
 
 const AppCard = ({ app }) => {
-  const { image, title, downloads, ratingAvg } = app;
+  const { id, image, title, tagline, downloads, ratingAvg } = app;
   return (
-    <Link to={'/appDetails/1'} className="card bg-base-100 shadow-sm pt-4 cursor-pointer hover:scale-105 transition">
+    <Link to={`/appDetails/${id}`} className="card bg-base-100 shadow-sm pt-4 cursor-pointer hover:scale-105 transition">
       <figure>
         <img src={image} alt="Shoes" />
       </figure>
       <div className="card-body justify-between">
-        <h2 className="font-bold text-xl text-color">{title}</h2>
+        <h2 className="font-semibold text-lg">{title}: {tagline}</h2>
         <div className="card-actions justify-between">
           <div className="badge rounded-md bg-emerald-50 !text-emerald-500 font-medium flex">
             <Download size={16} className="stroke-emerald-500" />
