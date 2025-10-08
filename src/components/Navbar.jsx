@@ -1,6 +1,4 @@
 import { Link, NavLink } from "react-router";
-import logo from "/public/logo.png";
-import githubIcon from "/public/github.png";
 
 const Navbar = () => {
   return (
@@ -67,7 +65,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to={"/"} className="flex items-center cursor-pointer">
-          <img className="w-10" src={logo} alt="" />
+          <img className="w-10" src="/logo.png" alt="" />
           <h1 className="text-color font-bold">HERO.IO</h1>
         </Link>
       </div>
@@ -113,7 +111,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <a href="https://github.com/rakibhassannayem" target="_blank" className="btn bg-color">
-          <img src={githubIcon} alt="" />
+          <img src="/github.png" alt="" />
           <p className="!text-white">Contribute</p>
         </a>
       </div>
