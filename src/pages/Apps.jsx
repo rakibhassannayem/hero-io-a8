@@ -1,9 +1,16 @@
 import useApps from "../hooks/useApps";
 import AppCard from "../components/AppCard";
 import SkeletonLoading from "../components/SkeletonLoading";
+import { useState } from "react";
 
 const Apps = () => {
   const { apps, loading } = useApps();
+  const [search, setSearch] = useState("");
+  const term = search.trim("").toLocaleLowerCase();
+  const searchedApps = term
+    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
+    : apps;
+
   return (
     <div>
       <div className="text-center">
@@ -14,9 +21,13 @@ const Apps = () => {
       </div>
 
       <div className="flex justify-between items-center mt-5">
-        <h2 className="font-bold text-xl">({apps.length}) Apps Found</h2>
+        <h2 className="font-bold text-xl">({searchedApps.length}) Apps Found</h2>
         <label className="input">
-          <input type="search" placeholder="Search Products" />
+          <input
+            onChange={(e) => setSearch(e.target.value)}
+            type="search"
+            placeholder="Search Products"
+          />
         </label>
       </div>
 
@@ -24,7 +35,7 @@ const Apps = () => {
         {loading ? (
           <SkeletonLoading />
         ) : (
-          apps.map((app) => <AppCard key={app.id} app={app} />)
+          searchedApps.map((app) => <AppCard key={app.id} app={app} />)
         )}
       </div>
     </div>
