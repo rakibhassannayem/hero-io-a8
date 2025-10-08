@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
 import SkeletonLoading from "../components/SkeletonLoading";
-import { addToInstallation } from "../utils/localStorage";
+import { addToInstallation, loadInstalledApps } from "../utils/localStorage";
 import {
   BarChart,
   Bar,
@@ -11,12 +11,15 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
-  const [isDisabled, setIsDisabled] = useState(false);
+  const installedApps = loadInstalledApps();
   const app = apps.find((a) => a.id === Number(id));
+  const isInstalled = installedApps.some((a) => a.id === Number(id));
+  const [isDisabled, setIsDisabled] = useState(isInstalled);
 
   if (loading) return <SkeletonLoading />;
 
@@ -36,6 +39,7 @@ const AppDetails = () => {
   const handleInstall = (app) => {
     setIsDisabled(true);
     addToInstallation(app);
+    toast.success("Installing...");
   };
 
   return (
