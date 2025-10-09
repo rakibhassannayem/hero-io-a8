@@ -1,15 +1,27 @@
 import useApps from "../hooks/useApps";
 import AppCard from "../components/AppCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
 import LoadingAnimation from "../components/LoadingAnimation";
 
 const Apps = () => {
   const { apps, loading } = useApps();
   const [search, setSearch] = useState("");
-  const term = search.trim("").toLocaleLowerCase();
-  const searchedApps = term
-    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    setSearchLoading(true);
+
+    const timer = setTimeout(() => {
+      setSearchTerm(search.trim("").toLowerCase());
+      setSearchLoading(false);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [search]);
+
+  const searchedApps = searchTerm
+    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(searchTerm))
     : apps;
 
   return (
@@ -35,7 +47,7 @@ const Apps = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
-        {loading ? (
+        {loading || searchLoading ? (
           <div className="col-span-full">
             <LoadingAnimation />
           </div>
