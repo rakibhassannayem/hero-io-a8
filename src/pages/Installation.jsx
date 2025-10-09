@@ -10,7 +10,7 @@ import LoadingAnimation from "../components/LoadingAnimation";
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [sortOrder, setSortOrder] = useState("none");
+  const [sortOrder, setSortOrder] = useState("");
 
   useEffect(() => {
     setLoading(true);
