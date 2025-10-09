@@ -1,6 +1,5 @@
 import { useParams } from "react-router";
 import useApps from "../hooks/useApps";
-import SkeletonLoading from "../components/SkeletonLoading";
 import { addToInstallation, loadInstalledApps } from "../utils/localStorage";
 import {
   BarChart,
@@ -12,6 +11,7 @@ import {
 } from "recharts";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const AppDetails = () => {
   const isInstalled = installedApps.some((a) => a.id === Number(id));
   const [isDisabled, setIsDisabled] = useState(isInstalled);
 
-  if (loading) return <SkeletonLoading />;
+  if (loading) return <LoadingAnimation />;
 
   const {
     image,

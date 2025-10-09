@@ -1,8 +1,8 @@
 import useApps from "../hooks/useApps";
 import AppCard from "../components/AppCard";
-import SkeletonLoading from "../components/SkeletonLoading";
 import { useState } from "react";
 import { Link } from "react-router";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const Apps = () => {
   const { apps, loading } = useApps();
@@ -36,7 +36,9 @@ const Apps = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
         {loading ? (
-          <SkeletonLoading />
+          <div className="col-span-full">
+            <LoadingAnimation />
+          </div>
         ) : searchedApps.length ? (
           searchedApps.map((app) => <AppCard key={app.id} app={app} />)
         ) : (
@@ -47,7 +49,8 @@ const Apps = () => {
               OPPS!! APP NOT FOUND
             </h1>
             <p className="text-secondary mt-2">
-              The App you are requesting is not found on our system.  please try another apps
+              The App you are requesting is not found on our system. please try
+              another apps
             </p>
             <Link
               to={-1}

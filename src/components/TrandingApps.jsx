@@ -1,7 +1,7 @@
 import useApps from "../hooks/useApps";
 import AppCard from "../components/AppCard";
-import SkeletonLoading from "./SkeletonLoading";
 import { Link } from "react-router";
+import LoadingAnimation from "./LoadingAnimation";
 
 const TrandingApps = () => {
   const { apps, loading } = useApps();
@@ -17,13 +17,18 @@ const TrandingApps = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
         {loading ? (
-          <SkeletonLoading />
+          <div className="col-span-full">
+            <LoadingAnimation />
+          </div>
         ) : (
           trandingApps.map((app) => <AppCard key={app.id} app={app} />)
         )}
       </div>
       <div className="flex justify-center mt-8 mb-10">
-        <Link to={"/apps"} className="btn bg-color text-lg !text-white px-10 py-6 mt-5">
+        <Link
+          to={"/apps"}
+          className="btn bg-color text-lg !text-white px-10 py-6 mt-5"
+        >
           Show All
         </Link>
       </div>

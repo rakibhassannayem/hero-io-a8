@@ -1,4 +1,3 @@
-// import useApps from "../hooks/useApps";
 import HeroSection from "../components/HeroSection";
 import TrandingApps from "../components/TrandingApps";
 
