@@ -1,14 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   loadInstalledApps,
   removeFromInstallation,
 } from "../utils/localStorage";
 import { Link } from "react-router";
 import { toast } from "react-toastify";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 const Installation = () => {
-  const [installedApps, setInstalledApps] = useState(() => loadInstalledApps());
+  const [installedApps, setInstalledApps] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [sortOrder, setSortOrder] = useState("none");
+
+  useEffect(() => {
+    setLoading(true);
+    const loadedApps = loadInstalledApps;
+    setInstalledApps(loadedApps);
+    setLoading(false);
+  }, []);
 
   const sortedApp = () => {
     if (sortOrder === "asc") {
@@ -27,7 +36,7 @@ const Installation = () => {
   const handleRemove = (id) => {
     removeFromInstallation(id);
     setInstalledApps((prev) => prev.filter((a) => a.id !== id));
-    toast.warn('Uninstalled successfully!')
+    toast.warn("Uninstalled successfully!");
   };
 
   return (
@@ -55,7 +64,9 @@ const Installation = () => {
       </div>
 
       <div className="space-y-3 mt-5">
-        {sortedApp().length ? (
+        {loading ? (
+          <LoadingAnimation />
+        ) : sortedApp().length ? (
           sortedApp().map((app) => (
             <div
               key={app.id}
