@@ -70,7 +70,7 @@ const Installation = () => {
           sortedApp().map((app) => (
             <div
               key={app.id}
-              className="bg-base-100 shadow-sm p-4 flex justify-between items-center rounded-lg"
+              className="bg-base-100 shadow-sm p-4 flex flex-col md:flex-row  justify-between md:items-center rounded-lg"
             >
               <div className="flex gap-3 items-center">
                 <figure className="w-20">
