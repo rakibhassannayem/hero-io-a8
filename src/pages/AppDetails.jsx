@@ -12,17 +12,22 @@ import {
 import { useState } from "react";
 import { toast } from "react-toastify";
 import LoadingAnimation from "../components/LoadingAnimation";
+import NotFound from "../components/NotFound";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
   const installedApps = loadInstalledApps();
-  
+
   const app = apps.find((a) => a.id === Number(id));
   const isInstalled = installedApps.some((a) => a.id === Number(id));
   const [isDisabled, setIsDisabled] = useState(isInstalled);
 
   if (loading) return <LoadingAnimation />;
+  
+  if (!app) {
+    return <NotFound />;
+  }
 
   const {
     image,
