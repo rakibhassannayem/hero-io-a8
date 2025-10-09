@@ -17,6 +17,7 @@ const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
   const installedApps = loadInstalledApps();
+  
   const app = apps.find((a) => a.id === Number(id));
   const isInstalled = installedApps.some((a) => a.id === Number(id));
   const [isDisabled, setIsDisabled] = useState(isInstalled);
